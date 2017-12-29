@@ -49,7 +49,7 @@ RUN groupadd -r chrome \
 USER chrome
 
 #Expose port 9222
-#EXPOSE 9222
+EXPOSE 9222
 
 ENTRYPOINT [ "google-chrome-stable" ]
 CMD [ "--headless", "--disable-gpu", "--no-sandbox", "--remote-debugging-address=0.0.0.0", "--remote-debugging-port=9222" ]
